@@ -1,0 +1,250 @@
+```css
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#020617);
+    color:#fff;
+    line-height:1.7;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    background:#38bdf8;
+    border-radius:10px;
+}
+
+/* Header */
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,0.05);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:2.5rem;
+    background:linear-gradient(to right,#38bdf8,#8b5cf6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* Sections */
+section{
+    width:90%;
+    max-width:1100px;
+    margin:30px auto;
+    padding:30px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.06);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.1);
+    box-shadow:0 8px 32px rgba(0,0,0,.3);
+    transition:.4s;
+}
+
+section:hover{
+    transform:translateY(-5px);
+}
+
+section h2{
+    color:#38bdf8;
+    margin-bottom:15px;
+    font-size:2rem;
+}
+
+/* Home Image */
+figure{
+    text-align:center;
+}
+
+figure img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    box-shadow:0 0 25px #38bdf8;
+    transition:.4s;
+}
+
+figure img:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 40px #8b5cf6;
+}
+
+figcaption{
+    margin-top:10px;
+    color:#cbd5e1;
+}
+
+/* Skills */
+ul li{
+    list-style:none;
+    background:rgba(56,189,248,.15);
+    margin:8px 0;
+    padding:10px 15px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+ul li:hover{
+    background:#38bdf8;
+    color:#000;
+    transform:translateX(10px);
+}
+
+/* Gallery */
+section img{
+    border-radius:15px;
+    margin:10px;
+    transition:.4s;
+}
+
+section img:hover{
+    transform:scale(1.1) rotate(2deg);
+    box-shadow:0 0 20px #38bdf8;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+th{
+    background:#38bdf8;
+    color:#000;
+    padding:15px;
+}
+
+td{
+    padding:12px;
+    text-align:center;
+    background:rgba(255,255,255,.05);
+}
+
+tr:hover td{
+    background:rgba(56,189,248,.15);
+}
+
+/* FAQ */
+details{
+    margin:10px 0;
+    padding:15px;
+    border-radius:15px;
+    background:rgba(255,255,255,.05);
+}
+
+summary{
+    cursor:pointer;
+    font-weight:600;
+    color:#38bdf8;
+}
+
+/* Form */
+form input,
+form textarea,
+form select{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:12px;
+    background:rgba(255,255,255,.08);
+    color:white;
+}
+
+form input:focus,
+form textarea:focus{
+    outline:2px solid #38bdf8;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    background:linear-gradient(45deg,#38bdf8,#8b5cf6);
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    transform:scale(1.05);
+}
+
+/* Footer */
+footer{
+    margin-top:40px;
+    text-align:center;
+    padding:30px;
+    background:rgba(255,255,255,.05);
+}
+
+footer a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:#8b5cf6;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    header h1{
+        font-size:1.8rem;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    section{
+        width:95%;
+        padding:20px;
+    }
+
+    figure img{
+        width:170px;
+        height:170px;
+    }
+}
+```
